@@ -7,7 +7,7 @@ class ConPov:
     :param a: is a list and sum of all elements should be equal to 1
     :param n: is a single number
     '''
-    def __init__(self,a,n):
+    def __init__(self, a, n):
         self.series = a
         self.single_value = n
 
@@ -33,6 +33,6 @@ class ConPov:
         return custm.pmf(x)
 
 
-custm = ConPov([0.5,0.5],2).conpov()
+custm = ConPov([0.5, 0.5], 2).conpov()
 print(custm)
 
