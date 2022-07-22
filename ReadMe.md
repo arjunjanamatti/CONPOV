@@ -7,7 +7,7 @@
         pip install conPov
 
 
-2. Calculate the co-effecient of variance
+2. Self convolution of discrete distribution
 
         from conPov import main
         # n-fold self convolution of discrete distribution
