@@ -30,7 +30,9 @@ class ConPov:
 
         y = y / y.sum()
         custm = rv_discrete(name='custom', values=[x, y])
-        return custm
+        return custm.pmf(x)
 
 
+custm = ConPov([0.5,0.5],2).conpov()
+print(custm)
 
