@@ -4,11 +4,11 @@
 
 1. Install:
 
-        pip install get-cov2
+        pip install conPov
 
 
 2. Calculate the co-effecient of variance
 
-        from get_cov_2 import main
-        # calculate the co-effecient of variance
-        cov = main.get_cov(series).cov()
+        from conPov import main
+        # n-fold self convolution of discrete distribution
+        result = main.ConPov(pmf_series, n_fold).conpov()
