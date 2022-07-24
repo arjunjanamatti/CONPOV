@@ -2,10 +2,10 @@ import numpy as np
 from scipy.stats import rv_discrete
 
 
-class ConPov:
+class con_pov:
     '''
     :param a: is a list and sum of all elements should be equal to 1
-    :param n: is a single number
+    :param n: is a integer value
     '''
     def __init__(self,a,n):
         self.series = a
@@ -33,6 +33,4 @@ class ConPov:
         return custm.pmf(x)
 
 
-custm = ConPov([0.5,0.5],2).conpov()
-print(custm)
 
